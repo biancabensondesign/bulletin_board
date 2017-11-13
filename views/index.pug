@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    link(href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab")
+    link(href="stylesheet.css", rel="stylesheet", type="text/css")
+  body.news
+    header
+      .nav
+        ul
+          li.home
+            a(href='/') Submit messages
+          li.tutorials
+            a.active(href='display') View messages
+      .form-style-6
+        h1 Bulletin Board
+        form(action= "/", method= "post")
+          input(type='text', name='field1', placeholder='Title')
+          textarea(name='field3', placeholder='Body')
+          input(type='submit', value='Submit message')
